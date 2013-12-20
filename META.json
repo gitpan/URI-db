@@ -1,0 +1,192 @@
+{
+   "abstract" : "Database URIs",
+   "author" : [
+      "David E. Wheeler <david@justatheory.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "URI-db",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.30",
+            "Test::More" : "0.88"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "URI" : "1.40",
+            "URI::Nested" : "0.10",
+            "perl" : "5.008001"
+         }
+      }
+   },
+   "provides" : {
+      "URI::cassandra" : {
+         "file" : "lib/URI/cassandra.pm",
+         "version" : "0.10"
+      },
+      "URI::couch" : {
+         "file" : "lib/URI/couch.pm",
+         "version" : "0.10"
+      },
+      "URI::couchdb" : {
+         "file" : "lib/URI/couchdb.pm",
+         "version" : "0.10"
+      },
+      "URI::cubrid" : {
+         "file" : "lib/URI/cubrid.pm",
+         "version" : "0.10"
+      },
+      "URI::db" : {
+         "file" : "lib/URI/db.pm",
+         "version" : "0.10"
+      },
+      "URI::db2" : {
+         "file" : "lib/URI/db2.pm",
+         "version" : "0.10"
+      },
+      "URI::derby" : {
+         "file" : "lib/URI/derby.pm",
+         "version" : "0.10"
+      },
+      "URI::firebird" : {
+         "file" : "lib/URI/firebird.pm",
+         "version" : "0.10"
+      },
+      "URI::hive" : {
+         "file" : "lib/URI/hive.pm",
+         "version" : "0.10"
+      },
+      "URI::impala" : {
+         "file" : "lib/URI/impala.pm",
+         "version" : "0.10"
+      },
+      "URI::informix" : {
+         "file" : "lib/URI/informix.pm",
+         "version" : "0.10"
+      },
+      "URI::ingres" : {
+         "file" : "lib/URI/ingres.pm",
+         "version" : "0.10"
+      },
+      "URI::interbase" : {
+         "file" : "lib/URI/interbase.pm",
+         "version" : "0.10"
+      },
+      "URI::maria" : {
+         "file" : "lib/URI/maria.pm",
+         "version" : "0.10"
+      },
+      "URI::mariadb" : {
+         "file" : "lib/URI/mariadb.pm",
+         "version" : "0.10"
+      },
+      "URI::max" : {
+         "file" : "lib/URI/max.pm",
+         "version" : "0.10"
+      },
+      "URI::maxdb" : {
+         "file" : "lib/URI/maxdb.pm",
+         "version" : "0.10"
+      },
+      "URI::monet" : {
+         "file" : "lib/URI/monet.pm",
+         "version" : "0.10"
+      },
+      "URI::monetdb" : {
+         "file" : "lib/URI/monetdb.pm",
+         "version" : "0.10"
+      },
+      "URI::mongo" : {
+         "file" : "lib/URI/mongo.pm",
+         "version" : "0.10"
+      },
+      "URI::mongodb" : {
+         "file" : "lib/URI/mongodb.pm",
+         "version" : "0.10"
+      },
+      "URI::mssql" : {
+         "file" : "lib/URI/mssql.pm",
+         "version" : "0.10"
+      },
+      "URI::mysql" : {
+         "file" : "lib/URI/mysql.pm",
+         "version" : "0.10"
+      },
+      "URI::oracle" : {
+         "file" : "lib/URI/oracle.pm",
+         "version" : "0.10"
+      },
+      "URI::pg" : {
+         "file" : "lib/URI/pg.pm",
+         "version" : "0.10"
+      },
+      "URI::pgsql" : {
+         "file" : "lib/URI/pgsql.pm",
+         "version" : "0.10"
+      },
+      "URI::postgres" : {
+         "file" : "lib/URI/postgres.pm",
+         "version" : "0.10"
+      },
+      "URI::postgresql" : {
+         "file" : "lib/URI/postgresql.pm",
+         "version" : "0.10"
+      },
+      "URI::sqlite" : {
+         "file" : "lib/URI/sqlite.pm",
+         "version" : "0.10"
+      },
+      "URI::sqlite3" : {
+         "file" : "lib/URI/sqlite3.pm",
+         "version" : "0.10"
+      },
+      "URI::sqlserver" : {
+         "file" : "lib/URI/sqlserver.pm",
+         "version" : "0.10"
+      },
+      "URI::sybase" : {
+         "file" : "lib/URI/sybase.pm",
+         "version" : "0.10"
+      },
+      "URI::teradata" : {
+         "file" : "lib/URI/teradata.pm",
+         "version" : "0.10"
+      },
+      "URI::unify" : {
+         "file" : "lib/URI/unify.pm",
+         "version" : "0.10"
+      },
+      "URI::vertica" : {
+         "file" : "lib/URI/vertica.pm",
+         "version" : "0.10"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/theory/uri-db/issues/"
+      },
+      "homepage" : "https://search.cpan.org/dist/URI-db/",
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "url" : "https://github.com/theory/uri-db/"
+      }
+   },
+   "version" : "0.10"
+}
