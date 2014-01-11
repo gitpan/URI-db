@@ -1,9 +1,9 @@
 package URI::_db;
 
 use strict;
-use 5.8.1;
+use 5.008001;
 use base 'URI::_login';
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 sub uri    { shift }
 sub _no_scheme_ok { 0 }
