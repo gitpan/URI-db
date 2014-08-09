@@ -14,6 +14,7 @@ lib/URI/impala.pm
 lib/URI/informix.pm
 lib/URI/ingres.pm
 lib/URI/interbase.pm
+lib/URI/ldapdb.pm
 lib/URI/maria.pm
 lib/URI/mariadb.pm
 lib/URI/max.pm
@@ -27,8 +28,10 @@ lib/URI/mysql.pm
 lib/URI/oracle.pm
 lib/URI/pg.pm
 lib/URI/pgsql.pm
+lib/URI/pgxc.pm
 lib/URI/postgres.pm
 lib/URI/postgresql.pm
+lib/URI/postgresxc.pm
 lib/URI/sqlite.pm
 lib/URI/sqlite3.pm
 lib/URI/sqlserver.pm

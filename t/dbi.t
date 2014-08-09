@@ -55,7 +55,19 @@ for my $spec (
         qry => [ foo => 1, foo => 2, lol => 'yes' ],
     },
     {
+        uri => 'db:postgresxc://foo:123/try?foo=1&foo=2&lol=yes',
+        dsn => 'dbi:Pg:host=foo;port=123;dbname=try;foo=1;foo=2;lol=yes',
+        dbi => [ [host => 'foo'], [port => 123], [dbname => 'try'] ],
+        qry => [ foo => 1, foo => 2, lol => 'yes' ],
+    },
+    {
         uri => 'db:pgsql://foo:123/try?foo=1&foo=2&lol=yes',
+        dsn => 'dbi:Pg:host=foo;port=123;dbname=try;foo=1;foo=2;lol=yes',
+        dbi => [ [host => 'foo'], [port => 123], [dbname => 'try'] ],
+        qry => [ foo => 1, foo => 2, lol => 'yes' ],
+    },
+    {
+        uri => 'db:pgxc://foo:123/try?foo=1&foo=2&lol=yes',
         dsn => 'dbi:Pg:host=foo;port=123;dbname=try;foo=1;foo=2;lol=yes',
         dbi => [ [host => 'foo'], [port => 123], [dbname => 'try'] ],
         qry => [ foo => 1, foo => 2, lol => 'yes' ],
@@ -130,6 +142,24 @@ for my $spec (
         uri => 'db:interbase://localhost:33/foo',
         dsn => 'dbi:InterBase:host=localhost;port=33;dbname=foo',
         dbi => [ [host => 'localhost'], [port => 33], [dbname => 'foo'] ],
+        qry => [],
+    },
+    {
+        uri => 'db:ldapdb://localhost:33/foo',
+        dsn => 'dbi:LDAP:foo',
+        dbi => [ [ dbname => 'foo' ] ],
+        qry => [],
+    },
+    {
+        uri => 'db:ldapdb://localhost/foo',
+        dsn => 'dbi:LDAP:foo',
+        dbi => [ [ dbname => 'foo' ] ],
+        qry => [],
+    },
+    {
+        uri => 'db:ldapdb://./foo',
+        dsn => 'dbi:LDAP:foo',
+        dbi => [ [ dbname => 'foo' ] ],
         qry => [],
     },
     {

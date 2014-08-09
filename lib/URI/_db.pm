@@ -3,7 +3,7 @@ package URI::_db;
 use strict;
 use 5.008001;
 use base 'URI::_login';
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 sub uri    { shift }
 sub _no_scheme_ok { 0 }
@@ -41,8 +41,8 @@ sub query_params {
 sub _dbi_param_map {
     my $self = shift;
     return (
-        [ host   => scalar $self->host    ],
-        [ port   => scalar $self->_port   ],
+        [ host   => scalar $self->host   ],
+        [ port   => scalar $self->_port  ],
         [ dbname => scalar $self->dbname ],
     );
 }
