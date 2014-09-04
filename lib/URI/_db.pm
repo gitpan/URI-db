@@ -3,10 +3,21 @@ package URI::_db;
 use strict;
 use 5.008001;
 use base 'URI::_login';
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 sub uri    { shift }
 sub _no_scheme_ok { 0 }
+
+sub canonical_engine { shift->scheme }
+
+sub canonical {
+    my $canon = shift->SUPER::canonical;
+    my $engine = $canon->canonical_engine;
+    return $canon if $canon->scheme eq $engine;
+    $canon = $canon->clone;
+    $canon->scheme($engine);
+    return $canon;
+}
 
 sub engine {
     my $self = shift;
